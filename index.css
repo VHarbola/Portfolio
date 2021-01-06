@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+}
+
+.header .logo {
+  float: left;
+  position: fixed;
+}
+
+.header .logo img {
+  height: 10em;
+  width: 10em;
+  border-radius: 50%;
+}
+
+.header #menuList {
+  float: right;
+  font-family: "Roboto", sans-serif;
+}
+
+.header #menuList .menuButton {
+  display: inline-block;
+}
+
+.header #menuList .menuButton a {
+  display: block;
+  text-decoration: none;
+  padding: 1em;
+  font-size: 2em;
+}
+
+#mB3,
+#mB1 {
+  display: block;
+  text-decoration: none;
+  padding: 1em;
+  font-size: 2em;
+}
+
+.header ul {
+  list-style: none;
+}
+
+#socialMedia .socialMediaIcon img {
+  height: 5em;
+  width: 5em;
+  border-radius: 50%;
+  padding: 1em;
+}
+
+#socialMedia {
+  list-style: none;
+  position: fixed;
+  float: right;
+  top: 30%;
+  right: 0em;
+}
+
+#sec-1 {
+  background-image: url("Images/personal.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+}
+
+.content__flexElement {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  line-height: 40px;
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+}
+
+.header #menuList .menuButton:hover {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.header {
+  overflow: auto;
+}
+
+.arrow-Down img {
+  border-radius: 50%;
+  height: 5em;
+  width: 5em;
+  position: absolute;
+  bottom: 0em;
+  left: 50%;
+  cursor: pointer;
+  padding: 1em;
+}
+
+.arrow-Down a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+}
+
+#sec-2 .sec-2__container {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3em;
+  text-decoration: none;
+}
+
+.popup-div {
+  position: fixed;
+  height: 500px;
+  width: 600px;
+  background-color: indianred;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -300px;
+  display: none;
+  z-index: 99998;
+  padding: 20px;
+}
+
+.popup-div::before {
+  content: "x";
+  position: absolute;
+  right: -30px;
+  top: -30px;
+  background-color: rgb(255, 255, 255);
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  font-size: 50px;
+  line-height: 55px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.popup-div .popup-div_form {
+  padding: 15px;
+}
+
+.popup-div .popup-div_form input {
+  font-size: 20px;
+  line-height: 30px;
+  width: 95%;
+  padding: 20px;
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+.popup-div .popup-div_form input[type="Submit"] {
+  cursor: pointer;
+}
+
+#mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 99990;
+  display: none;
+}

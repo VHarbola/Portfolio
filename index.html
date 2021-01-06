@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vaibhav Harbola</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id ="html5Loader"></div>
+    <div id="mask"></div>
+    <div class="popup-div">
+      <form class="popup-div_form">
+        <input
+          type="text"
+          id="name"
+          placeholder="Name"
+          name="popup-div_form_name"
+        />
+
+        <input
+          type="text"
+          id="email"
+          placeholder="Email"
+          name="popup-div_form_email"
+        />
+
+        <input
+          type="text"
+          id="phone_number"
+          placeholder="Contact Number"
+          name="popup-div_form_contact"
+        />
+
+        <input
+          type="text"
+          id="message"
+          placeholder="Message"
+          name="popup-div_form_Message"
+        />
+
+        <input type="Submit" value="Submit" />
+      </form>
+    </div>
+    <section id="sec-1">
+      <div class="header">
+        <div class="logo">
+          <img src="Images\vh.JPG" />
+        </div>
+        <ul id="menuList">
+          <li class="menuButton" id="mB1">About</li>
+          <li class="menuButton" id="mB2">
+            <a href="https://html.com/attributes/a-href/">Skills</a>
+          </li>
+          <li class="menuButton" id="mB3">Contact</li>
+        </ul>
+      </div>
+      <ul id="socialMedia">
+        <li class="socialMediaIcon" id="sMI1">
+          <a href="https://www.facebook.com"
+            ><img src="Images\facebook.JPG"
+          /></a>
+        </li>
+        <li class="socialMediaIcon" id="sMI2">
+          <a href="https://www.twitter.com"><img src="Images\twitter.JPG" /></a>
+        </li>
+        <li class="socialMediaIcon" id="sMI3">
+          <a href="https://www.google.com"><img src="Images\google.JPG" /></a>
+        </li>
+        <li class="socialMediaIcon" id="sMI4">
+          <a href="https://www.whatsapp.com"
+            ><img src="Images\whatsapp.JPG"
+          /></a>
+        </li>
+      </ul>
+
+      <div class="content__flexElement" id="flexElement1">
+        Hey There !! I want to be a full stack Developer.
+      </div>
+
+      <div class="arrow-Down">
+        <a href="#sec-2"><img src="Images\GoBelow.JPG" /></a>
+      </div>
+    </section>
+    <section id="sec-2">
+      <div class="sec-2__container">
+        I am a UI developer with expreienece in development with Html css React
+        and Javascript
+      </div>
+    </section>
+    <section id="sec--about">1312312123</section>
+  </div>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <script src="jquery.html5loader-master\jquery.html5loader-master\src\animations\jquery.html5Loader.circular.js"></script>
+    <script src="jquery.html5loader-master\jquery.html5loader-master\src\jquery.html5Loader.js"></script>
+    
+    <script type="text/javascript">
+     var loaderAnimation = $("#html5Loader").LoaderAnimation({
+        onComplete: function () {
+          console.log("preloader animation completed!");
+        },
+      });
+      $.html5Loader({
+        filesToLoad: "files.json",
+        onComplete: function () {
+          console.log("All the assets are loaded!");
+        },
+        onUpdate: loaderAnimation.update,
+      });
+</script>
+<script src="index.js"></script>
+  </body>
+</html>
+
